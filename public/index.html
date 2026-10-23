@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vaxtor — Discord Bot Hosting, 24/7 by Bytelater</title>
+  <meta name="description" content="Vaxtor hosts your Discord bot 24/7. Drag your project, we install everything and keep it online. Free & paid ranks." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="/img/vaxtor-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="bg-glow a"></div>
+  <div class="bg-glow b"></div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a class="logo" href="/">
+      <img class="logo-mark" src="/img/vaxtor-logo.png" alt="" /> Vaxtor
+    </a>
+    <div class="nav-links">
+      <a href="#platform" class="live-dot">Platform</a>
+      <a href="#plans">Plans</a>
+      <a href="#runtime">Runtimes</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="row">
+      <a class="btn sm" href="/Overview" id="navDash"><span data-ico="grid" data-ico-size="14"></span> DASHBOARD</a>
+      <a class="btn primary sm" href="/auth">Start</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="platform">
+    <div class="hero-inner">
+      <div>
+        <div class="pill">
+          <span><span data-ico="zap" data-ico-size="12"></span> VAXTOR CLOUD</span><span class="sep"></span><span>v1.0.0</span>
+        </div>
+        <h1>Host your Discord bot <u>24/7</u><br>with <span class="grad-text">Vaxtor.</span></h1>
+        <p class="lead">
+          Drag your project folder in — Vaxtor detects the language, installs every
+          dependency (npm, pip, discord.js, discord.py …) and keeps your bot online
+          every day, even while you sleep.
+        </p>
+        <div class="hero-cta">
+          <a class="btn white" href="/auth">Start hosting free →</a>
+          <a class="btn" href="#plans">View Plans</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><div class="v grad-text">99.9%</div><div class="k">Uptime goal</div></div>
+          <div class="hero-stat"><div class="v grad-text">24/7</div><div class="k">Bot runtime</div></div>
+          <div class="hero-stat"><div class="v grad-text">2 langs</div><div class="k">Node.js & Python</div></div>
+          <div class="hero-stat"><div class="v grad-text">ncb</div><div class="k">Never close bot</div></div>
+        </div>
+      </div>
+
+      <!-- isometric cubes -->
+      <div class="cubes" aria-hidden="true">
+        <div class="cube" style="left:8%;  top:10%; animation-delay:0s"><i class="top"></i><i class="side1"></i><i class="side2"></i></div>
+        <div class="cube" style="left:38%; top:0%;   animation-delay:.6s"><i class="top"></i><i class="side1"></i><i class="side2"></i></div>
+        <div class="cube" style="left:66%; top:12%;  animation-delay:1.2s"><i class="top"></i><i class="side1"></i><i class="side2"></i></div>
+        <div class="cube" style="left:20%; top:38%;  animation-delay:.3s"><i class="top"></i><i class="side1"></i><i class="side2"></i></div>
+        <div class="cube" style="left:50%; top:32%;  animation-delay:.9s"><i class="top"></i><i class="side1"></i><i class="side2"></i></div>
+        <div class="cube" style="left:78%; top:42%;  animation-delay:1.5s"><i class="top"></i><i class="side1"></i><i class="side2"></i></div>
+        <div class="cube" style="left:32%; top:66%;  animation-delay:.45s"><i class="top"></i><i class="side1"></i><i class="side2"></i></div>
+        <div class="cube" style="left:62%; top:70%;  animation-delay:1.05s"><i class="top"></i><i class="side1"></i><i class="side2"></i></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- RUNTIMES -->
+  <section class="section" id="runtime">
+    <div class="tiny" style="margin-bottom:14px">SUPPORTED — LANGUAGES &amp; RUNTIMES</div>
+    <h2>Bring any bot.<br>We handle the install.</h2>
+    <p class="sub">Vaxtor reads your project and runs the right installer automatically — no terminal, no setup.</p>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+      <div class="card hover"><div class="card-title">Node.js</div><div class="card-sub">package.json → <span class="mono">npm install</span> → <span class="mono">npm start</span>. discord.js, eris, oceanic…</div></div>
+      <div class="card hover"><div class="card-title">Python</div><div class="card-sub">requirements.txt → <span class="mono">pip install</span> → <span class="mono">python main.py</span>. discord.py, nextcord…</div></div>
+      <div class="card hover"><div class="card-title">Any language</div><div class="card-sub">Drop your own run command config as env vars; the live console shows everything.</div></div>
+      <div class="card hover"><div class="card-title">Live console</div><div class="card-sub">Real-time logs over WebSocket, plus Start / Stop / Shutdown / Kill controls.</div></div>
+    </div>
+  </section>
+
+  <!-- PLANS -->
+  <section class="section" id="plans">
+    <div class="tiny" style="margin-bottom:14px">RANKS — FREE &amp; PAID</div>
+    <h2>Pick your rank.</h2>
+    <p class="sub">Every rank comes with <b>ncb</b> (Not Close Bot) time — the clock only runs while your bot is actually on. Stop it, the timer pauses. Redeem a key in Paids to upgrade.</p>
+    <div class="plans" id="planGrid"><!-- filled by JS --></div>
+  </section>
+
+  <!-- CONTACT / FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="logo" style="justify-content:center; margin-bottom:12px"><img class="logo-mark" src="/img/vaxtor-logo.png" alt="" /> Vaxtor</div>
+    <div>Vaxtor — Discord bot hosting platform. Built by <b>Bytelater.</b></div>
+    <div style="margin-top:8px; opacity:.7">Support server: discord.gg/vaxtor · support@bytelater.dev</div>
+    <div style="margin-top:14px; opacity:.5">© 2026 Bytelater. All rights reserved.</div>
+  </footer>
+
+  <div id="toasts"></div>
+  <script src="js/icons.js"></script>
+  <script src="js/snow.js"></script>
+  <script src="js/landing.js"></script>
+</body>
+</html>
